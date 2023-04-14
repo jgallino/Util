@@ -11,7 +11,8 @@ using System.Runtime.InteropServices;
 
 namespace Util
 {
-    public partial class Form1 : Form
+    // Para facilitar el cambio de Server en el DSN
+    public partial class ODBC : Form
     {
         [
             DllImport("ODBCCP32.dll")
@@ -19,7 +20,7 @@ namespace Util
         private static extern bool SQLConfigDataSource(IntPtr parent, int request, string driver, string attributes);
         string title, opcion, attributes;
         
-        public Form1()
+        public ODBC()
         {
             InitializeComponent();
         }

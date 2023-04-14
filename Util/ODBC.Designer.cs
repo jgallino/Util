@@ -1,7 +1,7 @@
 ﻿
 namespace Util
 {
-    partial class Form1
+    partial class ODBC
     {
         /// <summary>
         ///  Required designer variable.
